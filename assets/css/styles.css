@@ -1,0 +1,114 @@
+
+html, body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #e4e3e2;
+}
+
+h1, h2, h3, h4, h5 {
+  	margin: 0;
+}
+
+header, nav, footer, section, div {
+	margin: 0;
+  	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+
+}
+
+header, main, footer {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+/* main */
+main {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.box {
+	width: 100%;
+	margin-top: 10px;
+	margin-left: 0;
+	margin-right: 0;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+
+/* vcard */
+.vcard {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.avatar_container {
+	width: 100%;
+	text-align: center;
+}
+
+.avatar {
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+}
+
+.title_container {
+	width: 100%;
+	text-align: center;
+}
+
+/* skills */
+
+details {
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+summary {
+	display: flex;
+}
+
+/* foofter */
+footer {
+	font-size: 0.75em;
+	text-align: right;
+}
+
+
+
+@media screen and (min-width: 500px) {
+	.vcard {
+		width: 50%;
+	}
+
+	.avatar {
+		width: 200px;
+		height: 200px;
+	}
+
+	.about {
+		width: 50%;
+	}
+
+	.title_container {
+		text-align: center;
+		position: relative;
+		top: 40%;
+	}
+
+}
+
+@media screen and (min-width: 800px) {
+	body {
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
