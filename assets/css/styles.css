@@ -1,18 +1,24 @@
 
-html, body {
+html,
+body {
 	margin: 0;
 	width: 100%;
 	height: 100%;
 	background-color: #e4e3e2;
 }
 
-
-header, nav, footer, section, div {
+header,
+nav,
+footer,
+section,
+div {
 	margin: 0;
 	box-sizing: border-box;
 }
 
-header, main, footer {
+header,
+main,
+footer {
 	padding-left: 1em;
 	padding-right: 1em;
 }
@@ -33,7 +39,11 @@ header {
 	height: 33px;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
 	  margin: 0;
 }
 
@@ -51,7 +61,6 @@ main {
 	-moz-flex-wrap: wrap;
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
-
 }
 
 .box {
@@ -62,7 +71,6 @@ main {
 	padding-bottom: 10px;
     border-bottom: 1px solid #d4d4d4;
 }
-
 
 /* vcard */
 .vcard {
@@ -91,6 +99,7 @@ main {
 .title-container {
 	width: 100%;
 	text-align: center;
+	/* font-family: "Open Sans", arial, sans-serif; */
 }
 
 /* work */
@@ -103,7 +112,7 @@ main {
 	-moz-flex-wrap: wrap;
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
-	text-align: center; 
+	text-align: center;
 }
 
 .card {
@@ -129,13 +138,13 @@ summary {
     display: -ms-flex;
 }
 
-/* foofter */
+/* footer */
 footer {
 	font-size: 0.75em;
 	text-align: right;
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 360px){
 	.card {
 		width: 100%;
 	}
@@ -145,7 +154,13 @@ footer {
 	}
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 361px) and (max-width: 768px) {
+	.card {
+		width: 33%;
+	}
+}
+
+@media screen and (min-width: 450px) {
 	.vcard {
 		width: 50%;
 	}
@@ -164,15 +179,14 @@ footer {
 		position: relative;
 		top: 40%;
 	}
-	
 }
 
-@media screen and (min-width: 800px) {
-	main, footer, .logo-container{
+@media screen and (min-width: 769px) {
+	main,
+	footer,
+	.logo-container{
 		width: 800px;
 		margin-left: auto;
 		margin-right: auto;
 	}
-
-	
 }
